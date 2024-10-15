@@ -1,0 +1,63 @@
+# config.yaml
+macros:
+  druid_rat_jump:
+    # turn into rat
+    - action: press_and_hold
+      key: q
+      duration: 0.1
+    - action: move_cursor
+      x: 1415
+      y: 870
+    - action: release
+      key: q
+    # jump with space immediately after transforming
+    - action: press
+      key: space
+      duration: 0.5
+  druid_panther_jump:
+    # turn into panther
+    - action: press_and_hold
+      key: q
+      duration: 0.5
+    - action: move_cursor
+      x: 1050
+      y: 500
+    - action: release
+      key: q
+    # wait a split second
+    - action: wait
+      duration: 0.1
+    # as panther, jump
+    - action: press
+      key: space
+      duration: 0.5 
+    # as panther, dash, with F
+    - action: press
+      key: f
+      duration: 0.05
+    # wait a split second
+    #- action: wait
+    #  duration: 0.1
+    # turn into chicken
+    - action: press_and_hold
+      key: q
+      duration: 0.01
+    - action: move_cursor
+      x: 890
+      y: 850
+    - action: release
+      key: q
+    # use the first chicken jump
+    - action: press
+      key: space
+      duration: 0.5 
+    - action: press
+      key: space
+      duration: 0.5 
+    
+
+hotkeys:
+  '5': druid_rat_jump
+  c: druid_panther_jump
+  
+toggle_button: f4
