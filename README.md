@@ -19,12 +19,14 @@ This project implements a customizable macro system for a game, specifically des
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/druid-macro-system.git
-   cd druid-macro-system
+   git clone https://github.com/yourusername/darkanddarkerhelpers.git
+   cd darkanddarkerhelpers
    ```
 
-2. Install the required dependencies:
+2. Create virtual environment and Install the required dependencies:
    ```
+   python -m venv venv
+   source venv/bin/activate
    pip install -r requirements.txt
    ```
 
